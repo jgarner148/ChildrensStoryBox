@@ -395,7 +395,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
       if random_number == 0:
         activity1_description = "You and " + friend + " build the sandcastle together and it has multiple towers and a large moat full of water."
       elif random_number == 1:
-        activity1_description = "While builidng the sandcastle " + friend + " finds two crabs nearby that you crown king and queen of the castle."
+        activity1_description = "While building the sandcastle " + friend + " finds two crabs nearby that you crown king and queen of the castle."
       elif random_number == 2:
         activity1_description = "You build the sandcastle with really high walls that you then cover with shells you found."
       elif random_number == 3:
@@ -425,11 +425,11 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
       elif random_number == 1:
         activity1_description = "You relax on a sunbed under the shade of an umbrella."
       elif random_number == 2:
-        activity1_description = "You and " + friend + " enjoy the sun together in a quite corner of the beach."
+        activity1_description = "You and " + friend + " enjoy the sun together in a quiet corner of the beach."
       elif random_number == 3:
         activity1_description = friend + " finds some rocks that the two of you can safely bathe on."
       elif random_number == 4:
-        activity1_description = "You and " + friend + " both make sure to put lots of suncream before you relax." 
+        activity1_description = "You and " + friend + " both make sure to put lots of suncream on before you relax." 
       else:
         activity1_description = "You enjoy sunbathing." #The user should never get this option it is just there incase of error
   elif location == "playground":
@@ -438,7 +438,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
         time_swinging = str(random.randint(5,20))
         activity1_description = "You pick the swing on the far left and " + friend + " goes on the one next to you. You swing for " + time_swinging + " minutes."
       elif random_number == 1:
-        activity1_description = "You try to swing as high as you can. Eventually you swing high enough that you can see over the trees in the distance."
+        activity1_description = "You try to swing as high as you can. Eventually, you swing high enough that you can see over the trees in the distance."
       elif random_number == 2:
         time_swinging = str(random.randint(15,30))
         activity1_description = "You and " + friend + " swing for " + time_swinging + " mintues. After this you feel dizzy so drink a big glass of water."
@@ -466,7 +466,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
           win = "win"
         else:
           win = "wins"
-        activity1_description = "You both race eahcother going down the slides and " + winner + " " + win + "."
+        activity1_description = "You both race eachother going down the slides and " + winner + " " + win + "."
       else:
         activity1_description = "You enjoy your time on the swings" #The user should never get this option it is just there incase of error
     elif activity1 == "play on the see-saw":
@@ -476,7 +476,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
         activity1_description = "While playing you try and get as high as you can when you're at the top. You make sure you are always holding the handle tight though."
       elif random_number == 2:
         time_playing = str(random.randint(15,45))
-        activity1_description = "You and " + friend + " really enjoy the see-saw so spend " + time_playing + " mintues on it" 
+        activity1_description = "You and " + friend + " really enjoy the see-saw so spend " + time_playing + " minutes on it" 
       elif random_number == 3:
         conversation_topics = ["what you did last weekend", "what you're doing next weekend", "your favourite animal", "what job you want to do when you're older"]
         conversation = random.choice(conversation_topics)
@@ -484,7 +484,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
       elif random_number == 4:
         activity1_description = "After playing on the see-saw for a while you both go and rest on the grass next to it"
       else:
-        activity1_description = "You enjoy your time on the swings" #The user should never get this option it is just there incase of error
+        activity1_description = "You enjoy your time on the see-saw" #The user should never get this option it is just there incase of error
   elif location == "theme park":
     if activity1 == "ride on a big roller coaster":
       ride_names = ["Thunderbolt", "Vortex", "Slingshot", "Goliath", "Whirlwind", "Phoenix", "Mantis", "Viper", "Tornado", "Speed"]
@@ -503,7 +503,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
       elif random_number == 3:
         activity1_description = "There was no queue for " + ride + " so you decide to ride it twice."
       elif random_number == 4:
-        activity1_description = friend + " reccomends you ride " + ride + " you really enjoy it."
+        activity1_description = friend + " recommends you ride " + ride + " you really enjoy it."
       else:
         activity1_description = "You enjoy your ride on the roller coaster" #The user should never get this option it is just there incase of error
     elif activity1 == "ride on a small roller coaster":
@@ -536,7 +536,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
         activity1_description = "You get really wet while on " + ride + " luckily " + friend + " manages to stay dry."
       elif random_number == 1:
         queue_time = str(random.randint(15,45))
-        activity1_description = "After waiting " + queue_time + " mintiues to get on " + ride + " you really enjoy it."
+        activity1_description = "After waiting " + queue_time + " minutes to get on " + ride + " you really enjoy it."
       elif random_number == 2:
         activity1_description = "You manage to ride all the water rides at the theme park however " + ride + " was your favourite."
       elif random_number == 3:
@@ -573,7 +573,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
         activity1_description = "You go and see 3 animals: the " + animal + ", the " + animal2 + " and the " + animal3 + ". " + friend + " says that " + animal2 + " was thier favourite."
       elif random_number == 3:
         animal = animal[:-1]
-        activity1_description = "You get to go on an tour of the " + animal + " enclosure. You made sure to follow all the keepers instructions so you stayed safe."
+        activity1_description = "You get to go on an tour of the " + animal + " enclosure. You made sure to follow all the keeper's instructions so you stayed safe."
       elif random_number == 4:
         animal = animal[:-1]
         activity1_description = "After seeing all the animals " + friend + " buys you a " + animal + " cuddly toy."
@@ -599,7 +599,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
         waiting_time = str(random.randint(5,20))
         activity1_description = "After waitng " + waiting_time + "to see the " + animal + ", they finally come into sight."
       elif random_number == 4:
-        activity1_description = friend + " suggests that you go and see the " + animal + " and you think its a great idea."
+        activity1_description = friend + " suggests that you go and see the " + animal + " and you think it's a great idea."
       else:
         activity1_description = "You enjoy seeing the animals" #The user should never get this option it is just there incase of error
     elif activity1 == "go to the bug house":
@@ -615,7 +615,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
         activity1_description = "You were able to hold a " + animal + ". You thought it was great but " + friend + " was too scared to have a go."
       elif random_number == 2:
         time_looking = str(random.randint(3,9))
-        activity1_description = "After staring for " + time_looking + " mintues, you finally notice the " + animal + " in its enclosure"
+        activity1_description = "After staring for " + time_looking + " minutes, you finally notice the " + animal + " in its enclosure"
       elif random_number == 3:
         activity1_description = "You and " + friend + " spent ages looking at the " + animal + "."
       elif random_number == 4:
@@ -626,7 +626,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
             animal2 = random.choice(animal_list)
           else:
             looping = False
-        activity1_description = "After looking at all the bug you think that " + animal + " is the best. However, " + friend + " thinks that " + animal2 + " is the best. You agree they are both great."
+        activity1_description = "After looking at all the bugs you think that " + animal + " are the best. However, " + friend + " thinks that " + animal2 + " are the best. You agree they are both great."
       else:
         activity1_description = "You enjoyed looking  at all the bugs" #The user should never get this option it is just there incase of error
   elif location == "mountain":
@@ -634,11 +634,11 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
       time_hours = str(random.randint(1,3))
       time_mins = str(random.randint(1,59))
       if time_hours == 1:
-        time_total = time_hours, "hour and", time_mins, "mintues"
+        time_total = time_hours, "hour and", time_mins, "minutes"
       elif time_hours == 1 and time_mins == 1:
-        time_total = time_hours, "hour and", time_mins, "mintue"
+        time_total = time_hours, "hour and", time_mins, "minute"
       elif time_mins == 1:
-        time_total = time_hours, "hours and", time_mins, "mintue"
+        time_total = time_hours, "hours and", time_mins, "minute"
       else:
         time_total = time_hours, "hours and", time_mins, "minutes"
       if random_number == 0:
@@ -646,7 +646,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
       elif random_number == 1:
         activity1_description = "You and " + friend + " walked for " + time_total + ". You got slightly lost on the way but still made it to the top"
       elif random_number == 2:
-        activity1_description = "You and " + friend + " walked for " + time_total + ". After you stopped to look at the amzing views you made it to the top"
+        activity1_description = "You and " + friend + " walked for " + time_total + ". After you stopped to look at the amazing views you made it to the top"
       elif random_number == 3:
         activity1_description = "You and " + friend + " walked for " + time_total + ". You only made it halfway up before you got tired but still enjoyed yourself"
       elif random_number == 4:
@@ -660,7 +660,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
       if random_number == 0:
         animal_list = ["deer", "sheep", "fox", "wolf", "cow"]
         animal = random.choice(animal_list)
-        activity1_description = "You spot a lone " + animal + " standing in a near by field"
+        activity1_description = "You spot a lone " + animal + " standing in a nearby field"
       elif random_number == 1:
         animal = random.choice(animal_list)
         activity1_description = "You and " + friend + " spot a large group of " + animal + "in the distance"
@@ -726,7 +726,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
         activity1_description = "You rent a rowing boat for " + time_rented + " hours."
       elif random_number == 4:
         time_rented = str(random.randint(1,3))
-        activity1_description = "You rent a peddle boat for " + time_rented + " hours."
+        activity1_description = "You rent a pedal boat for " + time_rented + " hours."
       else:
         activity1_description = "You enjoyed renting your boat" #The user should never get this option it is just there incase of error
     elif activity1 == "go fishing":
@@ -754,9 +754,9 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
         activity1_description = "You spend " + time_swimming + " swimming in some shallow water."
       elif random_number == 1:
         time_swimming = random.randomint(15,45)
-        activity1_description = "You spend " + time_swimming + " swimming in some shallow water."
+        activity1_description = "You spend " + time_swimming + " swimming in some deeper water."
       elif random_number == 2:
-        activity1_description = "While swimming " + friend + "norices a group of small fish under the water"
+        activity1_description = "While swimming " + friend + "notices a group of small fish under the water"
       elif random_number == 3:
         activity1_description = "You and " + friend + " splash around together making sure not to get water in eachothers eyes."
       elif random_number == 4:
