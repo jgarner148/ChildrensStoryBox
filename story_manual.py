@@ -414,7 +414,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
       elif random_number == 2:
         activity1_description = "You dip your head under the water and see all of the interesting shells and plants that live in the sea."
       elif random_number == 3:
-        activity1_description = "You and " + friend + " splash around together making sure not to get water in eachothers eyes."
+        activity1_description = "You and " + friend + " splash around together making sure not to get water in each others eyes."
       elif random_number == 4:
         activity1_description = "You swim around in the sea and ocasionally dunk your head under the water for a few seconds."
       else:
@@ -466,7 +466,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
           win = "win"
         else:
           win = "wins"
-        activity1_description = "You both race eachother going down the slides and " + winner + " " + win + "."
+        activity1_description = "You both race each other going down the slides and " + winner + " " + win + "."
       else:
         activity1_description = "You enjoy your time on the swings" #The user should never get this option it is just there incase of error
     elif activity1 == "play on the see-saw":
@@ -501,7 +501,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
       elif random_number == 2:
         activity1_description ="You and " + friend + " really enjoy your ride so decide to buy the picture at the end." 
       elif random_number == 3:
-        activity1_description = "There was no queue for " + ride + " so you decide to ride it twice."
+        activity1_description = "As there wasn't a queue for " + ride + " so you decide to ride it twice."
       elif random_number == 4:
         activity1_description = friend + " recommends you ride " + ride + " you really enjoy it."
       else:
@@ -597,7 +597,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
         activity1_description = "While visting the " + animal + " you get the opportunity to feed them."
       elif random_number == 3:
         waiting_time = str(random.randint(5,20))
-        activity1_description = "After waitng " + waiting_time + "to see the " + animal + ", they finally come into sight."
+        activity1_description = "After waiting " + waiting_time + " to see the " + animal + ", they finally come into sight."
       elif random_number == 4:
         activity1_description = friend + " suggests that you go and see the " + animal + " and you think it's a great idea."
       else:
@@ -758,7 +758,7 @@ def gen_activity1_description(location, activity1, friend): #Randomly generates 
       elif random_number == 2:
         activity1_description = "While swimming " + friend + "notices a group of small fish under the water"
       elif random_number == 3:
-        activity1_description = "You and " + friend + " splash around together making sure not to get water in eachothers eyes."
+        activity1_description = "You and " + friend + " splash around together making sure not to get water in each others eyes."
       elif random_number == 4:
         activity1_description = "You swim far enough out that the water is up to your shoulders when you stand up"
       else:
@@ -779,12 +779,12 @@ def food_beach(): #Asks the user to pick an eating location if they chose the be
       food = input("Type the number that links with the location you want: ")
       clear()
       if food == "1":
-        food_options = ["a burger with chips.", "Soup with bread.", "a pizza with gralic bread."]
+        food_options = ["a burger with chips.", "soup with bread.", "a pizza with garlic bread."]
         food = "you go to a restaurant and have " + random.choice(food_options)
         location = "restaurant"
         looping2 = False
       elif food == "2":
-        food_options = ["cod", "fish cake", "Sausage"]
+        food_options = ["cod", "fish cake", "sausage"]
         food = "you go to a chip shop and have " + random.choice(food_options) + " and chips."
         location = "chip shop"
         looping2 = False
@@ -1021,19 +1021,19 @@ def find_activity2(friend):#Asks the user to pcik an actvity to do once they get
       if activity2 == "1":
         activity_options = ["your favourite episode of your favourite show is on.", "you decide to watch some cartoons.", "you watch a film about animals."]
         activity_description = random.choice(activity_options)
-        activity2 = "You and " + friend + " decide to watch some television and " + activity_description
+        activity2 = "you and " + friend + " decide to watch some television and " + activity_description
         activity = "watch some television"
         looping2 = False
       elif activity2 == "2":
-        activity_options = ["you win.", "you loose.", "you draw."]
+        activity_options = ["win.", "loose.", "draw."]
         activity_description = random.choice(activity_options)
-        activity2 = "You and " + friend + " decide to play some video games. After playing 1 game you " + activity_description
+        activity2 = "you and " + friend + " decide to play some video games. After playing 1 game you " + activity_description
         activity = "play a video game"
         looping2 = False
       elif activity2 == "3":
         activity_options = ["monopoly.", "cluedo.", "the game of life."]
         activity_description = random.choice(activity_options)
-        activity2 = "You and " + friend + " decide to play a board game. You play " + activity_description + " it was lots of fun."
+        activity2 = "you and " + friend + " decide to play a board game. You play " + activity_description + " it was lots of fun."
         activity = "play a board game"
         looping2 = False
       else: 
@@ -1094,7 +1094,7 @@ weather = random.choice(weather_options)
 day_options = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 day = random.choice(day_options)
 first_line = "The following is a short story about " + user_name + " and their friend " + friend + ": "
-paragraph = "On a " + weather + " " + day + " morning you and " + friend + " leave your " + house + " to go to the " + location + ". When you get there you " + activity1 + ". " + activity1_description +" Once you have finished you " + food + " After your fun day out at the " + location + " you go back home to your " + house + ". Once you get there " + activity2 + " After this you go to sleep thinking about how much fun you had. "
+paragraph = "On a " + weather + " " + day + " morning you and " + friend + " leave your " + house + " to go to the " + location + ". When you get there you " + activity1 + ". " + activity1_description +" Once you have finished " + food + " After your fun day out at the " + location + " you go back home to your " + house + ". Once you get there " + activity2 + " After this you go to sleep thinking about how much fun you had. "
 last_line = "The End."
 
 ##### Story printing #####
